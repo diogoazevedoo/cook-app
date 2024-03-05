@@ -1,5 +1,6 @@
 import { View, Text } from "react-native"
 import Animated, { SlideInDown, BounceOutDown } from "react-native-reanimated"
+import { Button } from "../Button"
 
 import { styles } from "./styles"
 import { theme } from "@/theme"
@@ -31,6 +32,8 @@ export function Selected({ quantity, onClear, onSearch }: Props) {
                     onPress={onClear} 
                 />
             </View>
+
+            <Button title="Find" onPress={onSearch} />
         </Animated.View>
     )
 }
