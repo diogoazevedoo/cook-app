@@ -58,13 +58,13 @@ export default function Recipes() {
           />
 
           <Text style={styles.name}>{recipe.name}</Text>
-          <Text style={styles.time}>{recipe.minutes} minutos de preparo</Text>
+          <Text style={styles.time}>{recipe.minutes} minutes of preparation</Text>
         </View>
 
         <Ingredients ingredients={ingredients} />
 
         <View style={styles.content}>
-          <Text style={styles.preparation}>Modo de preparado</Text>
+          <Text style={styles.preparation}>Preparation mode</Text>
 
           <FlatList
             data={preparations}
